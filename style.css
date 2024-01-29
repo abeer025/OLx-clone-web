@@ -5,12 +5,16 @@
 }
 
 .header-top{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
     background-color: #f7f8f8;
-    margin-left: 20px;
-    padding-left: 20px;
+    padding: 9px;
+
 }
 
 a{
     text-decoration: none;
 }
+
