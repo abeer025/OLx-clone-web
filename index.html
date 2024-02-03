@@ -2,129 +2,346 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Olx Clone Web</title>
-    <script src="https://kit.fontawesome.com/4bf47e1a10.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olx Clone Web</title>
+  <script src="https://kit.fontawesome.com/4bf47e1a10.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-top"> <!--main header-topbar start-->
-            <div class="logo">
-                <a href="#"><img src="Assets/olx.png" alt="OLX" width="52px" height="32px"></a>
-            </div>
-            <div class="motors-icon ps-4  ">
-                <a href="https://www.olx.com.pk/motors/"> <i class="fa-solid fa-car" style="color: #151414;"></i>
-                    MOTORS</a>
-            </div>
-            <div class="property-icon ps-4 ">
-                <a href='https://www.olx.com.pk/properties/'> <i class="fa-regular fa-building"
-                        style="color:#151414"></i> PROPERTY</a>
-            </div>
-        </div> <!-- main header-topbar end-->
+  <!--=======================HEADER START=========================-->
+  <header>
+  <nav>
+    <!--==========main header-topbar start===============-->
+    <div class="header-top">
+      <div class="logo">
+        <a href="#"><img src="Assets/olx.png" alt="OLX" width="52px" height="32px"></a>
+      </div>
+      <div class="motors-icon ps-2  ">
+        <a href="https://www.olx.com.pk/motors/"> <i class="fa-solid fa-car" style="color: #151414;"></i>
+          MOTORS</a>
+      </div>
+      <div class="property-icon ps-2 ">
+        <a href='https://www.olx.com.pk/properties/'> <i class="fa-regular fa-building" style="color:#151414"></i>
+          PROPERTY</a>
+      </div>
+    </div> <!--============= main header-topbar end ===========================-->
+    <!--=======================header-navbar start=========================-->
+    <div class="header-navbar d-flex flex-row flex-wrap justify-content-center"><!---->
+      <div class="logo-olx">
+        <a href="#"><img src="Assets/olx_logo-removebg-preview.png" alt="OLX"></a>
+      </div>
+      <!-- =======input search bx start======== -->
+      <!--======= first input search box ========-->
+      <div class="input-group">
+        <button type="button" class="btn btn-outline-dark bg-white text-black"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" class="form-control  text-center" autocomplete="location-search" value
+          placeholder="Search city, area or locality" aria-label="Text input with segmented dropdown button">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end ">
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-crosshairs" style="color: #3aa1ff;"></i>
+              Use current location</a></li>
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> See ads in all
+              Pakistan</a></li>
 
-        <div class="header-navbar d-flex flex-column flex-wrap justify-content-center"><!--header-navbar-->
-            <div class="logo-olx">
-                <a href="#"><img src="Assets/olx_logo-removebg-preview.png" alt="OLX"></a>
-            </div>
-            <!-- input search bx start -->
-            <!-- first input search box -->
-            <div class="input-group">
-                <button type="button" class="btn btn-outline-dark bg-white text-black"><i
-                        class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="text" class="form-control  text-center" autocomplete="location-search" value
-                    placeholder="Search city, area or locality" aria-label="Text input with segmented dropdown button">
-                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end ">
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-crosshairs"
-                                style="color: #3aa1ff;"></i> Use current location</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> See ads in all
-                            Pakistan</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <h6 class="m-2"> Choose Region:</h6>
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> Sindh, Pakistan</a>
+          </li>
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> Punjab, Pakistan</a>
+          </li>
+        </ul>
+      </div>
+      <!--======= second input searchbox ========-->
+      <div class="input-group search">
+        <input type="text" class="form-control  text-center" autocomplete="location-search" value
+          placeholder="Find Cars, Mobile Phones, Pr.." aria-label="Text input with segmented dropdown button">
 
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <h6 class="m-2"> Choose Region:</h6>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> Sindh, Pakistan</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> Punjab, Pakistan</a>
-                    </li>
-                </ul>
-            </div>
-                <!-- second input searchbox -->
-            <div class="input-group">
-                <input type="text" class="form-control  text-center" autocomplete="location-search" value
-                    placeholder="Find Cars, Mobile Phones, Pr.." aria-label="Text input with segmented dropdown button">
+        <button type="button" class="btn btn-outline-secondary bg-dark text-white"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <ul class="dropdown-menu dropdown-menu-end ">
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-crosshairs" style="color: #3aa1ff;"></i>
+              Use current location</a></li>
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> See ads in all
+              Pakistan</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <h6 class="m-2"> Choose Region:</h6>
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> Sindh, Pakistan</a>
+          </li>
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> Punjab, Pakistan</a>
+          </li>
+      </div>
+      <!--======== End inpur search boxes =========-->
+      <div class="login">
+        <a id="log" href="./login.html">Login</a>
+      </div>
+      <div class="selling_page">
+        <button>
+          <a href=""> <i class="fa-solid fa-plus "></i> SELL
+        </button>
+      </div>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#olxNavbar"><span
+          class="navbar-toggler-icon"></span></button>
+    </div>
+    </div>
+  </nav>
+  <!--=======================header-navbar end =========================-->
+<!--======= catogories links ==========-->
+<div class="categories ">
+    
+      <ul class="categories-list col ">
+        <li class="nav-item col" id="Cat-list">
+          <a class="nav-link dropdown-toggle avtive" id="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            ALL CATEGORIES
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mobile</a></li>
+            <li><a class="dropdown-item" href="#">Cars</a></li>
+            <li><a class="dropdown-item" href="#">Motorcycles</a></li>
+            <li><a class="dropdown-item" href="#">Houses</a></li>
+            <li><a class="dropdown-item" href="#">TV-Video-Audio</a></li>
+            <li><a class="dropdown-item" href="#">Tablets</a></li>
+            <li><a class="dropdown-item" href="#">Land & Plots</a></li>
+          </ul>
+        </li>
+        <li class="nav-item col ">
+          <a class="nav-link" href="#">Mobile Phones</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link" href="#">Cars</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link" href="#">Motorcycles</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link" href="#">Houses</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link" href="#">TV-Video-Audio</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link" href="#">Tablets</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link" href="#">Land & Plots</a>
+        </li>
+      </ul>
+</div>
+</header>
+  <!--=======================HEADER END=========================-->
 
-                <button type="button" class="btn btn-outline-secondary bg-dark text-white"><i
-                        class="fa-solid fa-magnifying-glass"></i></button>
-                <ul class="dropdown-menu dropdown-menu-end ">
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-crosshairs"
-                                style="color: #3aa1ff;"></i> Use current location</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> See ads in all
-                            Pakistan</a></li>
+  
 
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <h6 class="m-2"> Choose Region:</h6>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> Sindh, Pakistan</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> Punjab, Pakistan</a>
-                    </li>
-            </div>
-        
-        <!-- End inpur search boxes -->
+  <!--====== ads =======-->
+
+  <div id="carouselExampleSlidesOnly" class="container carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.olx.com.pk/thumbnails/424970966-800x600.webp" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.olx.com.pk/thumbnails/424970966-800x600.webp" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.olx.com.pk/thumbnails/424970966-800x600.webp" class="d-block w-100">
+      </div>
+    </div>
+  </div>
+
+  <!--====================================== product-container ===========================================-->
+  <!-- <div class="container mt-4" id="product-container"> 
+    <!--==== 1st row of cards ===--
+    <div id='row-1' class="row mt-3">
+      <div class="card col col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <a href="https://www.olx.com.pk/item/vivo-y66-464-pta-approved-iid-1080872149"><div class="card-div">
+          <img src="https://images.olx.com.pk/thumbnails/428592913-800x600.webp" class="cardimg" alt="...">
         </div>
-    </header>
+        <div id='cardbo' class="card-body">
+          <p class="card-text">Vivo y66 4.64 PTA approved</p>
+          <h5 class="card-title">Rs 8,500 </h5>
+          <p class="card-text"><small class="text-muted">Others, Renala Khurd</small></p>
+        </div>
+      </div>
+    </a>
+      <div class="card col col-6  col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card-div">
+          <img src="https://images.olx.com.pk/thumbnails/428592913-240x180.webp" class="cardimg" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="card-text">iphone 12 pro</p>
+          <h5 class="card-title">Rs 205,000 </h5>
+          <p class="card-text"><small class="text-muted">Shah Jamal, Lahore
+            3 days ago</p></small>
+        </div>
+      </div>
+      <a href="https://www.olx.com.pk/item/iphone-x-iid-1083078818">
+        <div class="card col col-6  col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <div class="card-div">
+            <img src="https://images.olx.com.pk/thumbnails/427870302-240x180.webp" class="cardimg" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text">IPHONE X PTA Approved</p>
+            <h5 class="card-title">Rs 59,000 </h5>
+            <p class="card-text"><small class="text-muted">Walton Road Lahore. 45 mins ago</small></p>
+          </div>
+        </div>
+      </a> 
+      </div>
+    </div>
+  </div> -->
+
+  <div class="row row-cols-1 row-cols-md-3 g-0 cards-flex">
+    <div class="col">
+      <div class="card ">
+        <img src="https://images.olx.com.pk/thumbnails/427870302-240x180.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">IPHONE X PTA Approved</h5>
+          <p class="card-text">Rs 59,000 <br>
+          Walton Road Lahore.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">45 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card ">
+        <img src="https://images.olx.com.pk/thumbnails/292814979-400x300.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">iPhone 11 Pro Max pta</h5>
+          <p class="card-text">Rs 195,000
+            <br>Saddar, Karachi.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"> 1 days ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card ">
+        <img src="https://images.olx.com.pk/thumbnails/354626431-240x180.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rs 12,999</h5>
+          <p class="card-text">vivoY85/Y83/Y19/Y17 s1,Pta Approved <br>
+            Ilahi Abad, Faisalabad
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 4 weeks ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button">
+    <button>Load more</button>
+  </div>
+  
+  <!-- footer -->
+  <div class="footer1 container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="footerimg col col-6 col-sm-6 col-md-4">
+          <img src="Assets/Fimg.webp" alt="">
+        </div>
+        <div class="footercontent col col-6 col-sm-6 col-md-4">
+          <h2 class="mt-3">TRY THE OLX APP</h2>
+          <p>Buy, sell and find just about anything using the app on your mobile.</p>
+        </div>
+        <div class="footerapp col col-12 col-sm-12 col-md-4">
+          <div>
+            <p class="mt-5">GET YOUR APP Today</p>
+          </div>
+          <img src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" alt="">
+          <img src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" alt="">
+          <img src="https://www.olx.com.pk/assets/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer2 container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="footer2content col col-6 col-sm-4 col-md-2">
+          <h5 class="mt-3">POPULAR CATEGORIES</h5>
+          <p>Cars</p>
+          <p>Flats for rent</p>
+          <p>Mobile Phones</p>
+          <p>Jobs</p>
+        </div>
+        <div class="footer2content col col-6 col-sm-4 col-md-2">
+          <h5 class="mt-3">TRENDING SEARCHES</h5>
+          <p>Bikes</p>
+          <p>Watches</p>
+          <p>Books</p>
+          <p>Dogs</p>
+        </div>
+        <div class="footer2content col col-6 col-sm-4 col-md-3">
+          <h5 class="mt-3">ABOUT US</h5>
+          <p>About EMPG</p>
+          <p>OLX Blog</p>
+          <p>Contact US</p>
+          <p>OLX for Businesses</p>
+        </div>
+        <div class="footer2content col col-6 col-sm-4 col-md-2">
+          <h5 class="mt-3">OLX</h5>
+          <p>Help</p>
+          <p>Sitemap</p>
+          <p>Terms of use</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="footerapp2 col col-12 col-sm-6 col-md-3">
+          <div>
+            <p class="mt-3">FOLLOW US</p>
+          </div>
+          <div>
+            <a href="https://twitter.com/OLX_Pakistan"><img src="https://www.olx.com.pk/assets/iconTwitter_noinline.6037fa7d9a7b9d6408fb1b3d70524b97.svg" class="footerappimg"></a>
+            <a href="https://www.facebook.com/olxpakistan"><img src="https://www.olx.com.pk/assets/iconFacebook_noinline.773db88c5b9ee5aaab365e61cdb750da.svg" class="footerappimg"></a>
+            <a href="https://www.youtube.com/channel/UCARDDjJnW7IRBpo_AP7WTHQ?sub_confirmation=1"><img src="https://www.olx.com.pk/assets/iconYoutube_noinline.c85bd6801ec83d6a3b498059550bef26.svg" class="footerappimg"></a>
+            <a href="https://www.instagram.com/olx.pakistan/"><img src="https://www.olx.com.pk/assets/iconInstagram_noinline.d7d5811ebc44e03a674c8d0b5ff3f232.svg" class="footerappimg"></a>
+          </div>
+          <div>
+            <a href="https://apps.apple.com/pk/app/olx-pakistan/id1551315538"><img src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" class="footerappimg2"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.olx.pk"><img src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" class="footerappimg2"></a>
+            <a href="https://appgallery.huawei.com/#/app/C104375435"><img src="https://www.olx.com.pk/assets/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg" class="footerappimg2"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer3 container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <p id="col-p"> <b> Free Classifieds in Pakistan </b>. © 2006-2022 OLX</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
