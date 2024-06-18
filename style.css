@@ -253,13 +253,12 @@ ul.categories-list.col{
     /* width: 111.5%;
     height: 160px !important;
     margin-left: -13px;
-    margin-top: -1vh; */
+    margin-top: -1vh; *
     background-color: #222;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    
-    
-} */
+
+}*/
 .card-text{
     float: left;
     text-align: justify;
@@ -468,7 +467,7 @@ ul.categories-list.col{
     color: rgba(3, 51, 56, 0.827);
     text-align: center;
     font-size: 3vh;
-    margin-top: -5%;
+    margin-top: -1%;
 }
 #opt{
     display: inline-block;
@@ -582,18 +581,18 @@ table{
 #heading h3{
     text-align: center;
     color: rgba(3, 51, 56, 0.958);
-    font-size: 5vh !important;
+    font-size: 3vh !important;
 }
 #Email{
     display: flex;
     justify-content: center;
 }
 #Email input {
-    width: 80%;
-    height: 8vh;
+    width: 75%;
+    height: 7vh;
     border-radius: 5px;
     padding-left: 5%;
-    font-size: 4vh;
+    font-size: 3vh;
     border: 2px solid #002f34;
 }
 #Email input:hover{
@@ -601,11 +600,11 @@ table{
 }
 
 #Email button {
-    width: 87%;
-    height: 8vh;
+    width: 73%;
+    height: 7vh;
     border-radius: 5px;
     font-size: 5vh;
-    margin-top: 10%;
+    margin-top: 1%;
     background-color: #002f34;
     color: white;
 }
@@ -617,7 +616,8 @@ table{
     text-align: center;
     width: 90%;
     margin:auto 5%;
-    margin-top: 13%;
+    margin-top: 5%;
+    font-size: 1.5vh;
 }
 /* =============passwordcreate=========== */
 #bodypass{
@@ -661,8 +661,8 @@ table{
     
 }
 #Pass input {
-    width: 80%;
-    height: 6vh;
+    width: 75%;
+    height: 7vh;
     border-radius: 5px;
     padding-left: 5%;
     font-size: 3vh;
@@ -685,14 +685,16 @@ table{
 }
 #Pass button:hover{
     width: 88%;
-    font-size: 5vh;
+    /* font-size: 5vh; */
 }
 #passCon{
-    margin: auto 7%;
+    margin: auto 5%;
     margin-top: -2%;
 }
 #passCon p{
-    font-size: 2vh;
+    font-size: 1.6vh;
+    text-align: center;
+    margin-top: 15px;
 }
 #prapass{
     text-align: center;
@@ -706,8 +708,24 @@ table{
 
 }
 
+/* ============signup============== */
+#signupLink{
+    color: #3a40ff;
+    font-size: 3vh;
+}
+
+#emailSignup button{
+    width: 73%;
+    height: 7vh;
+    border-radius: 5px;
+    font-size: 5vh;
+    margin-top: 1%;
+    background-color: #002f34;
+    color: white;
+}
+
 /* ============passlogin============== */
-#bodypasslogin{
+/* #bodypasslogin{
     display: flex;
     justify-content: center;
     background-color: #03363c;
@@ -740,7 +758,7 @@ table{
     text-align: center;
     font-size: 3vh;
     margin-bottom: 6%;
-}
+} */
 
 #Passlogin{
     display: flex;
@@ -759,7 +777,7 @@ table{
     border-color: rgb(10, 131, 140);
 }
 
-#Passlogin button {
+/* #Passlogin button {
     width: 87%;
     height: 8vh;
     border-radius: 5px;
@@ -781,7 +799,7 @@ table{
 }
 #prapasslogin{
     font-size: 2vh;
-}
+} */
 
 /* ==================products new page================== */
 .fullimg{
@@ -1075,4 +1093,50 @@ table{
     border: 2px solid #002f34;
     color: #002f34;
     background-color: white;
+}
+
+.nav-item{
+    width:100px;
+}
+
+#signUp.btn{
+    background: #00a400;
+    text-align: center;
+    width: 20%;
+}
+
+#LogIn.btn{
+    /* background: #00a400; */
+    text-align: center;
+    width: 20%;
+}
+
+/* .signup-cont{
+    text-align:center ;
+} */
+
+.side-feed{
+    width: 40%;
+    height: 100vh;
+    color: #002f34!important;
+}
+
+.center-feed, #feedParent{
+    width: 100%;
+    height: 200vh;
+}
+
+/* #post-inp{
+    width: 200%;
+} */
+
+.container login-cont {
+    border: 1px solid #ccc;
+    height: 200px;
+}
+
+.flex-right {
+    float: right !important;
+    width: 100px ;
+    height: 100px;
 }
